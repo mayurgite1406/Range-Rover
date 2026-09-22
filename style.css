@@ -1,0 +1,1884 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Gill Sans", Helvetica;
+}
+/* Navbar top part*/
+
+header{
+    
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar-top{
+    width: 100vw;
+    height: 6vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-top pre,
+.navbar-top a{
+    color: white;
+    font-size: 13px;
+}
+.navbar-top a:hover{
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+/*Now the bottom navbar*/
+
+.navbar-bottom{
+    width: 100vw;
+    height: 9vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1000;
+}
+
+#left-menu-checkbox{
+    display: none;
+}
+
+.left-menu{
+    background-color: white;
+    height: 100%;
+    width: 9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.left-menu-items{
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    top: 0vh;
+    left: -700px;
+    transition: 0.5s ease;
+}
+
+.left-menu-items div/*,
+.left-menu-items label*/{
+    background-color: white;
+    height: 100%;
+    width: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*.left-menu-items label{
+    font-size: 20px;
+}*/
+
+.left-menu-items div:hover{
+    background-color: #E7E5E4;
+}
+
+#left-menu-checkbox:checked ~ .left-menu-items{
+    left: 0;
+    z-index: 100;
+    transition: 0.5s ease;
+}
+
+/* Now the brand name on menu*/
+
+.brand-name-menu{
+    height: 100%;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;;
+    font-size: 19px;
+    font-weight: 550;
+    position: relative;
+    left: -50px;
+}
+
+/*Now the right side menu*/
+
+.right-menu{
+    background-color: white;
+    height: 9vh;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    transition: 0.2s ease;
+    position: absolute;
+    right: 5px;
+}
+
+#right-menu-checkbox{
+    display: none;
+}
+
+.right-menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    height: 100%;
+    position: relative;
+    top: 0vh;
+    right: -700px;
+    transition: 0.5s ease;
+    background-color: white;
+}
+
+.right-menu-items div,
+.right-menu-items label{
+    background-color: white;
+    height: 100%;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    gap: 8px;
+}
+
+/*.right-menu-items label{
+    font-size: 20px;
+}*/
+
+.right-menu-items div:hover{
+    background-color: #E7E5E4;
+}
+
+#support-and-chat{
+    width: 10vw;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+#support-and-chats{
+    width: 11vw;
+}
+
+#right-menu-checkbox:checked ~ .right-menu-items{
+    right: 35px;
+    z-index: 100;
+    transition: 0.5s ease;
+}
+
+/*Now we will make the builds slidebar*/
+
+
+.builds-slidebar {
+    width: 30vw;
+    height: 98vh;
+    background-color: white;
+
+    position: fixed;
+    top: 0;
+    right: -700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+
+    border-radius: 15px;
+    gap: 40px;
+    transition: 0.5s ease;
+}
+
+#cross-build{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: -150px;
+    top: 10px;
+}
+
+#cross-build i{
+    font-size: 30px;
+}
+
+
+.builds-heading{
+    background-color: white;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.builds-car-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap : 20px;
+    width: 90%;
+}
+
+.builds-car{
+    display: flex;
+    align-items: center;
+    gap : 20px;
+    width: 100%;
+    height: 9.5vh;
+    background-color: white;
+}
+
+.builds-car-range-image{
+    width: 40%;
+    height: 98%;
+    background-image: url("builds1.png");
+    background-size: cover;
+}
+
+.builds-car-sport-image{
+    width: 40%;
+    height: 98%;
+    background-image: url("builds2.png");
+    background-size: cover;
+}
+
+.builds-car-velar-image{
+    width: 40%;
+    height: 98%;
+    background-image: url("builds3.png");
+    background-size: cover;
+}
+
+.builds-car-evoque-image{
+    width: 40%;
+    height: 98%;
+    background-image: url("builds4.png");
+    background-size: cover;
+}
+
+#builds-car-button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.builds-car:hover{
+    background-color: #E7E5E4;
+}
+
+#builds-checkbox:checked ~ .builds-slidebar{
+    right: 0px;
+    z-index: 1000;
+    transition: 0.5s ease;
+}
+
+#builds-checkbox{
+    display: none;
+}
+
+/*Now we will make the support slidebar*/
+
+.support-slidebar{
+    background-color: white;
+    width: 30vw;
+    height: 98vh;
+
+    position: fixed;
+    top: 0;
+    left: -700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+
+    border-radius: 15px;
+    gap: 30px;
+    transition: 0.5s ease;
+}
+
+#cross-support{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+#cross-support i{
+    font-size: 30px;
+}
+
+.support-slidebar p,
+.support-slidebar span{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.support-slidebar a{
+    text-decoration: none;
+    background: linear-gradient(to right, white, white);
+    color: blue;
+}
+
+#a-whatsapp{
+    text-decoration: underline;
+    color: green;
+}
+
+#support-checkbox:checked ~ .support-slidebar{
+    left: 0px;
+    z-index: 1000;
+    transition: 0.5s ease;
+}
+
+#support-checkbox{
+    display: none;
+}
+
+/*Now we will build the main sctions*/
+
+/*first slide*/
+.frame {
+    padding-top: 150px;
+    width: 100vw;
+    height: 100vh;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url("background_1.png");
+
+    background-size: cover;
+
+    animation: slideshow 8s ease-in-out infinite alternate;
+}
+
+@keyframes slideshow {
+
+    from {
+        background-image:
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.1)
+            ),
+            url("background_1.png");
+
+        background-size: cover;
+    }
+
+    to {
+        background-image:
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.3),
+                rgba(0, 0, 0, 0.1)
+            ),
+            url("background_2.png");
+
+        background-size: cover;
+    }
+}
+
+
+.front-slides{
+    padding-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: transparent;
+    width: 36vw;
+    height: 28vh;
+    gap: 20px;
+    color: white;
+}
+
+#front-slide-heading{
+    font-size: 33px;
+    font-weight: 600;
+}
+
+#front-slide-sub-heading{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.front-slide-buttons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    gap: 20px;
+}
+
+#front-slide-first-button {
+    width: 48%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    transition: 0.4s ease;
+    color: black;
+}
+
+#front-slide-first-button:hover{
+    transition: 0.3s ease;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+#front-slide-second-button:hover{
+    transition: 0.3s ease;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.1);
+}
+
+#front-slide-second-button {
+    width: 48%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 13px;
+}
+
+/*now the first video heading*/
+
+.title-first-video{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.first-video{
+    width: 100vw;
+    height: 98vh;
+}
+
+/*After video content*/
+
+.after-first-video{
+    width: 100vw;
+    height: 30vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.built-own-section{
+    width: 15%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#built-own-first{
+    color: black;
+}
+
+#built-own-second{
+    width: 90%;
+    height: 40px;
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#built-own-third a{
+    text-decoration: none;
+    color: black;
+}
+
+#built-own-second:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/*Car options */
+
+.car-options{
+    width: 100vw;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.car-option{
+    width: 22vw;
+    height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    box-shadow: 2px 5px 10px black;
+    transition: 0.5s ease;
+}
+
+.car-option:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+    box-shadow: 5px 10px 15px black;
+    z-index: 0;
+}
+
+#norm-range-rover-image{
+    background-image: url("model1.png");
+    background-size: cover;
+    width: 95%;
+    height: 40%;
+}
+
+#range-rover-sport-image{
+    background-image: url("model2.png");
+    background-size: cover;
+    width: 95%;
+    height: 40%;
+}
+
+#range-rover-velar-image{
+    background-image: url("model3.png");
+    background-size: cover;
+    width: 95%;
+    height: 40%;
+}
+
+#range-rover-evoque-image{
+    background-image: url("model4.png");
+    background-size: cover;
+    width: 95%;
+    height: 40%;
+}
+
+.car-option-name{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.car-option-price{
+    font-size: 14px;
+}
+
+.car-options-slogan{
+    font-size: 14px;
+}
+
+.car-option-explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 10%;
+    transition: 0.2s ease;
+}
+
+.car-option-explore:hover{
+    
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.2s ease;
+}
+
+.car-option-built-own{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    height: 10%;
+}
+
+/*Now we will do the second slideshow///////////////////////////////////////////////////////////////////////////////*/
+
+.second-slideshow{
+    width: 100vw;
+    height: 85vh;
+    background-color: white;;
+    
+}
+
+#slide1-radio,
+#slide2-radio,
+#slide3-radio,
+#slide4-radio,
+#slide5-radio{
+    display: none;
+}
+
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    transition: 0.7s ease;
+
+    position: absolute;
+    left: 0px;
+}
+
+.slide1{
+    transform: translateX(0px);
+}
+
+.slide2{
+    transform: translateX(100vw);
+}
+
+.slide3{
+    transform: translateX(200vw);
+}
+
+.slide4{
+    transform: translateX(300vw);
+}
+
+.slide5{
+    transform: translateX(400vw);
+}
+
+#slide1-radio:checked ~ .slide1{
+    transform: translateX(0);
+}
+
+#slide2-radio:checked ~ .slide1{
+    transform: translateX(-100vw);
+}
+
+#slide3-radio:checked ~ .slide1{
+    transform: translateX(-200vw);
+}
+
+#slide4-radio:checked ~ .slide1{
+    transform: translateX(-300vw);
+}
+
+#slide5-radio:checked ~ .slide1{
+    transform: translateX(-400vw);
+}
+
+#slide1-radio:checked ~ .slide2{
+    transform: translateX(100vw);
+}
+
+#slide2-radio:checked ~ .slide2{
+    transform: translateX(0);
+}
+
+#slide3-radio:checked ~ .slide2{
+    transform: translateX(-100vw);
+}
+
+#slide4-radio:checked ~ .slide2{
+    transform: translateX(-200vw);
+}
+
+#slide5-radio:checked ~ .slide2{
+    transform: translateX(-300vw);
+}
+
+#slide1-radio:checked ~ .slide3{
+    transform: translateX(200vw);
+}
+
+#slide2-radio:checked ~ .slide3{
+    transform: translateX(100vw);
+}
+
+#slide3-radio:checked ~ .slide3{
+    transform: translateX(0);
+}
+
+#slide4-radio:checked ~ .slide3{
+    transform: translateX(-100vw);
+}
+
+#slide5-radio:checked ~ .slide3{
+    transform: translateX(-200vw);
+}
+
+#slide1-radio:checked ~ .slide4{
+    transform: translateX(300vw);
+}
+
+#slide2-radio:checked ~ .slide4{
+    transform: translateX(200vw);
+}
+
+#slide3-radio:checked ~ .slide4{
+    transform: translateX(100vw);
+}
+
+#slide4-radio:checked ~ .slide4{
+    transform: translateX(0);
+}
+
+#slide5-radio:checked ~ .slide4{
+    transform: translateX(-100vw);
+}
+
+#slide1-radio:checked ~ .slide5{
+    transform: translateX(400vw);
+}
+
+#slide2-radio:checked ~ .slide5{
+    transform: translateX(300vw);
+}
+
+#slide3-radio:checked ~ .slide5{
+    transform: translateX(200vw);
+}
+
+#slide4-radio:checked ~ .slide5{
+    transform: translateX(100vw);
+}
+
+#slide5-radio:checked ~ .slide5{
+    transform: translateX(0);
+}
+
+#gt-image-section,
+#sv-ultra-image-section,
+#sv-masara-image-section,
+#sport-image-section,
+#sv-carbon-image-section{
+    width: 80%;
+    height: 90%;
+    background-size: cover;
+    position: relative;
+    left: 15px;
+    z-index: 0;
+
+}
+
+#gt-image-section{
+    background-image:
+    linear-gradient(to right,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.05)),
+    url("slide1.png");
+}
+
+#sv-ultra-image-section{
+    background-image:
+    linear-gradient(to right,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.05)),
+    url("slide2.png");
+}
+
+#sv-masara-image-section{
+    background-image:
+    linear-gradient(to right,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.05)),
+    url("slide3.png");
+}
+
+#sport-image-section{
+    background-image:
+    linear-gradient(to right,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.05)),
+    url("slide4.png");
+}
+
+#sv-carbon-image-section{
+    background-image:
+    linear-gradient(to right,
+    rgba(0,0,0,.5),
+    rgba(0,0,0,.05)),
+    url("slide5.png");
+}
+
+.information-section{
+    position: relative;
+    z-index: 1;
+
+    margin-left: 5vw;
+
+    width: 40vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    color: black;
+}
+
+.slide-car-name{
+    font-size: 24px;
+    font-weight: 550;
+}
+
+.slide-car-slogan{
+    font-size: 15px;
+}
+
+.slide-explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+}
+
+.slide-explore:hover{
+    background-color: white;
+    color: black;
+    transition: 0.4s ease;
+    border: 2px solid black;
+}
+
+.car-calling{
+    font-size: 12px;
+    color: #155DFC;
+}
+
+.first-counter,
+.second-counter,
+.third-counter,
+.fourth-counter,
+.fifth-counter{
+    font-size: 20px;
+}
+
+.first-counter i:hover,
+.second-counter i:hover,
+.third-counter i:hover,
+.fourth-counter i:hover,
+.fifth-counter i:hover{
+    transform: scale(1.5);
+    transition: 0.3s ease;
+}
+
+/* now the individual cars///////////////////////////////*/
+
+.individual-range-rover {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/* INFORMATION */
+
+.individual-information-range-rover {
+    width: 25vw;
+    height: 50%;
+    margin-left: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    gap: 3vh;
+
+    background-color: white;
+    flex-shrink: 0;
+}
+
+
+/* CAR NAME */
+
+.individual-car-name {
+    font-size: 35px;
+    font-weight: 550;
+}
+
+
+/* SLOGAN */
+
+.individual-car-slogan {
+    font-size: 15px;
+}
+
+
+/* EXPLORE */
+
+.individual-car-explore {
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+    flex-shrink: 0;
+}
+
+.individual-car-explore:hover{
+    transition: 0.3s ease;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* BUILD YOUR OWN */
+
+.individual-car-calling {
+    font-size: 15px;
+    color: #155DFC;
+}
+/* VISUAL SECTION */
+
+.range-rover-visual {
+    width: 65vw;
+    height: 90%;
+    margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    flex-shrink: 0;
+}
+/* IMAGE SECTION */
+
+.range-image-part {
+    width: 35vw;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    gap: 10px;
+    padding-left: 10vw;
+
+    flex-shrink: 0;
+}
+
+.range-image1{
+    background-image: url("a1.png");
+    background-size: cover;
+    width: 80%;
+    height: 45%;
+}
+
+.range-image2{
+    background-image: url("a2.png");
+    background-size: cover;
+    width: 80%;
+    height: 45%;
+}
+
+/* VIDEO */
+
+#range-video {
+    width: 27vw;
+    height: 90%;
+    
+    flex-shrink: 0;
+}
+
+#range-video video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+/* now second     ///////////////////////////////////*/
+
+.individual-range-rover-sv-ultra{
+
+    width:100vw;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    overflow:hidden;
+
+}
+
+.individual-information-range-rover-sv-ultra{
+
+    width:25vw;
+    height:50%;
+    margin-left:5vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:3vh;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-rover-sv-ultra-visual{
+
+    width:65vw;
+    height:90%;
+    margin-left:5vw;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-sv-ultra-image-part{
+
+    width:35vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:white;
+    gap:10px;
+    padding-left:10vw;
+    flex-shrink:0;
+
+}
+
+.range-sv-ultra-image1{
+
+    background-image:url("b1.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-sv-ultra-image2{
+
+    background-image:url("b2.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-sv-ultra-video{
+
+    width:27vw;
+    height:90%;
+    flex-shrink:0;
+
+}
+
+#range-sv-ultra-video video{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+
+.individual-range-rover-sport{
+
+    width:100vw;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    overflow:hidden;
+
+}
+
+.individual-information-range-rover-sport{
+
+    width:25vw;
+    height:50%;
+    margin-left:5vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:3vh;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-rover-sport-visual{
+
+    width:65vw;
+    height:90%;
+    margin-left:5vw;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-sport-image-part{
+
+    width:35vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:white;
+    gap:10px;
+    padding-left:10vw;
+    flex-shrink:0;
+
+}
+
+.range-sport-image1{
+
+    background-image:url("c1.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-sport-image2{
+
+    background-image:url("c2.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-sport-video{
+
+    width:27vw;
+    height:90%;
+    flex-shrink:0;
+
+}
+
+#range-sport-video video{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+
+.individual-range-rover-velar{
+
+    width:100vw;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    overflow:hidden;
+
+}
+
+.range-rover-velar-visual{
+
+    width:65vw;
+    height:90%;
+    margin-left:5vw;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-velar-image-part{
+
+    width:35vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:white;
+    gap:10px;
+    padding-left:10vw;
+    flex-shrink:0;
+
+}
+
+.range-velar-image1{
+
+    background-image:url("d1.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-velar-image2{
+
+    background-image:url("d2.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-velar-video{
+
+    width:27vw;
+    height:90%;
+    flex-shrink:0;
+
+}
+
+#range-velar-video video{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+.individual-information-range-rover-velar{
+
+    width:25vw;
+    height:50%;
+    margin-left:5vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:3vh;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+
+.individual-range-rover-evoque{
+
+    width:100vw;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    overflow:hidden;
+
+}
+
+.individual-information-range-rover-evoque{
+
+    width:25vw;
+    height:50%;
+    margin-left:5vw;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    gap:3vh;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-rover-evoque-visual{
+
+    width:65vw;
+    height:90%;
+    margin-left:5vw;
+    display:flex;
+    align-items:center;
+    background-color:white;
+    flex-shrink:0;
+
+}
+
+.range-evoque-image-part{
+
+    width:35vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    background-color:white;
+    gap:10px;
+    padding-left:10vw;
+    flex-shrink:0;
+
+}
+
+.range-evoque-image1{
+
+    background-image:url("e1.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-evoque-image2{
+
+    background-image:url("e2.png");
+    background-size:cover;
+    width:80%;
+    height:45%;
+
+}
+
+#range-evoque-video{
+
+    width:27vw;
+    height:90%;
+    flex-shrink:0;
+
+}
+
+#range-evoque-video video{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+/*scroll-image-part===================================*/
+
+.scroll-image-part{
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+.scroll-image1{
+    background-image: url("scroll1.png");
+    background-size: cover;
+    height: 90%;
+    width: 18%;
+    box-shadow: 2px 5px 8px black;
+    transition: 0.5s ease;
+}
+
+.scroll-image2{
+    background-image: url("scroll2.png");
+    background-size: cover;
+    height: 90%;
+    width: 18%;
+    box-shadow: 2px 5px 8px black;
+    transition: 0.5s ease;
+}
+
+.scroll-image3{
+    background-image: url("scroll3.png");
+    background-size: cover;
+    height: 90%;
+    width: 18%;
+    box-shadow: 2px 5px 8px black;
+    transition: 0.5s ease;
+}
+
+.scroll-image4{
+    background-image: url("scroll4.png");
+    background-size: cover;
+    height: 90%;
+    width: 18%;
+    box-shadow: 2px 5px 8px black;
+    transition: 0.5s ease;
+}
+
+.scroll-image5{
+    background-image: url("scroll5.png");
+    background-size: cover;
+    height: 90%;
+    width: 18%;
+    box-shadow: 2px 5px 8px black;
+    transition: 0.5s ease;
+}
+
+.scroll-image1:hover,
+.scroll-image2:hover,
+.scroll-image3:hover,
+.scroll-image4:hover,
+.scroll-image5:hover{
+    transition: 0.5s ease;
+    box-shadow: 5px 10px 15px black;
+    transform: scale(1.1);
+}
+
+/*image-scroll-textarea==============================*/
+
+.image-scroll-textarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 30vh;
+    background-color: #E7E5E4;
+    border-radius: 15px;
+}
+
+.image-scroll-area-first{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5vh;
+}
+
+#image-scroll-heading{
+    font-size: 23px;
+    font-weight: 500;
+}
+
+#image-scroll-p{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#image-scroll-explore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+    width: 15vw;
+    height: 40px;
+}
+
+#image-scroll-explore:hover{
+    transition: 0.4s ease;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/*royal-warrent==========================================*/
+
+.royal-warrent{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FAFAFA;
+}
+
+.royal-warrent-textarea{
+    width: 45%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5vh;
+}
+
+#royal-warrent-heading{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#royal-warrent-p{
+    font-size: 18px;
+    font-weight: 50;
+}
+
+.warrent-image{
+    width: 45%;
+    height: 80%;
+    background-image: url("warrent.png");
+    background-size: cover;
+}
+
+/*always-informed==============================*/
+
+.always-informed-bg{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.always-informed{
+    width: 90%;
+    height: 85%;;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10vw;
+    background-color: #F5F5F4;
+    border-radius: 20px;
+}
+
+.always-informed-textarea{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    width: 35%;
+    height: 50%;
+    background-color: transparent;
+}
+
+#always-informed-heading{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#always-informed-text{
+    font-size: 15px;
+    font-weight: 50;
+}
+
+.email-area{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    gap : 10px;
+}
+
+#email{
+    width: 70%;
+    height: 100%;
+    padding-left: 2vw;
+    border: none;
+}
+
+#email-button{
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    transition: 0.4s ease;
+    font-size: 15px;
+}
+
+#email-button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    transition: 0.4s ease;
+}
+
+/*Now lets move towars footer====================================*/
+
+
+/* footer first part**************************/
+
+.footer{
+
+    width:100vw;
+    min-height:55vh;
+    background-color:white;
+    padding:40px 42px;
+
+}
+
+.first-footer{
+
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.footer-first-part{
+
+    width:72%;
+    display:flex;
+    flex-direction:column;
+
+}
+
+.footer-first-first{
+
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.footer-one,
+.footer-two,
+.footer-three{
+
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:13px;
+
+}
+
+.footer-one{
+
+    width:30%;
+
+}
+
+.footer-two{
+
+    width:30%;
+
+}
+
+.footer-three{
+
+    width:30%;
+
+}
+
+.footer-one p,
+.footer-two p,
+.footer-three p{
+
+    margin:0 0 15px 0;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+
+}
+
+.footer-two p:nth-of-type(2){
+
+    margin-top:20px;
+
+}
+
+.footer-one a,
+.footer-two a,
+.footer-three a{
+
+    text-decoration:none;
+    color:#344054;
+    font-size:13px;
+    letter-spacing:1px;
+
+}
+
+.footer-one a:hover,
+.footer-two a:hover,
+.footer-three a:hover{
+
+    color:black;
+
+}
+
+.foter-first-second{
+
+    width:90%;
+    margin-top:45px;
+    position:relative;
+
+}
+
+#footer-search{
+
+    width:100%;
+    height:45px;
+    border:none;
+    border-bottom:1px solid #c5c5c5;
+    outline:none;
+    padding-left:58px;
+    font-size:13px;
+    letter-spacing:1px;
+    color:#344054;
+    transition: 0.3s ease;
+}
+
+#footer-search:hover{
+    border-bottom: 3px solid black;
+    transition: 0.3s ease;
+}
+
+#footer-search::placeholder{
+
+    color:#344054;
+    opacity:1;
+}
+
+.foter-first-second::before{
+
+    content:"\f002";
+    font-family:"Font Awesome 7 Free";
+    font-weight:900;
+    position:absolute;
+    left:2px;
+    top:10px;
+    font-size:22px;
+    color:#344054;
+
+}
+
+.footer-second-part{
+
+    width:23%;
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+
+}
+
+.instagram,
+.youtube,
+.facebook,
+.x,
+.linkedin{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.instagram p,
+.youtube p,
+.facebook p,
+.x p,
+.linkedin p{
+
+    margin:0;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+
+}
+
+#insta-logo,
+.youtube-logo,
+.facebook-logo,
+.x-logo,
+.linkedin-logo{
+
+    width:62px;
+    height:62px;
+    background-color:#080F1A;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    border-radius: 20px;
+
+}
+
+#insta-logo i,
+.youtube-logo i,
+.facebook-logo i,
+.x-logo i,
+.linkedin-logo i{
+
+    font-size:30px;
+
+}
+
+.linkedin:hover .linkedin-logo{
+    background-color:#0A66C2;
+}
+
+.instagram:hover #insta-logo{
+    background-color:#DD2A7B;
+}
+
+.youtube:hover .youtube-logo{
+    background-color:#dd2a2d;
+}
+
+.facebook:hover .facebook-logo{
+    background-color:#1877F2;
+}
+
+.x:hover .x-logo{
+    background-color: black;
+}
+
+/*============ second-footer============*/
+
+.second-footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 12px;
+}
+
+.second-footer p{
+    font-size: 12px;
+    color: #44403B;
+}
+
+.third-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.third-footer a{
+    color: #155DFC;
+}

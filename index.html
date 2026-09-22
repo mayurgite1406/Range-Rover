@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Rover</title>
+
+    <link rel="icon" type="image/png" href="./web_logo.png?v=1">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar-top">
+            <pre>Find your perfect Range Rover.    </pre>
+            <a href="https://www.findmeasuv.in/stock_data/new/range_rover_family">Search in stock vehicles.</a>
+
+        </div>
+
+        <div class="navbar-bottom">
+            <input type="checkbox" name="left-menu-checkbox" id="left-menu-checkbox">
+            <label for="left-menu-checkbox">
+                <div class="left-menu"> ☰ MENU</div>
+            </label>
+            <div class="left-menu-items">
+                <!--<label for = "left-menu-checkbox">☰</label>-->
+                <div id="vehicles"
+                    onclick="window.location.href = 'https://www.rangerover.com/en-in/saved-builds/index.html'">VEHICLES
+                </div>
+                <div id="owners" onclick="window.location.href = 'https://www.rangerover.com/en-in/search.html'">OWNERS
+                </div>
+                <div id="explore" onclick="window.location.href = 'https://www.rangerover.com/en-in/search.html'">
+                    EXPLORE</div>
+                <div id="shop-now" onclick="window.location.href = 'https://www.rangerover.com/en-in/search.html'">SHOP
+                    NOW</div>
+            </div>
+
+            <div class="brand-name-menu" onclick="window.location.href = 'index.html'">RANGE ROVER</div>
+
+            <input type="checkbox" name="right-menu-checkbox" id="right-menu-checkbox">
+            <label for="right-menu-checkbox">
+                <div class="right-menu"> ☰ HELP</div>
+            </label>
+            <div class="right-menu-items">
+
+                <div id="retailers"
+                    onclick="window.location.href = 'https://www.rangerover.com/en-in/national-dealer-locator.html'"><i
+                        class="fa-solid fa-location-dot"></i> RETAILERS</div>
+
+                <!---->
+                <label for="builds-checkbox">
+                    <div id="builds"><i class="fa-regular fa-bookmark"></i> BUILDS</div>
+                </label>
+
+
+                <label for="support-checkbox" id="support-and-chats">
+                    <div id="support-and-chat"><i class="fa-regular fa-comments"></i> SUPPORT & CHAT</div>
+                </label>
+
+                <div id="search-icon" onclick="window.location.href = 'https://www.rangerover.com/en-in/search.html'"><i
+                        class="fa-solid fa-magnifying-glass"></i></div>
+                <!--<label for = "right-menu-checkbox">☰</label>-->
+            </div>
+        </div>
+
+        <!--Now we will make the builds slidebar-->
+        <input type="checkbox" id="builds-checkbox">
+        <div class="builds-slidebar">
+
+            <div id="cross-build">
+                <label for="builds-checkbox">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </label>
+            </div>
+            <br />
+            <div class="builds-heading">BUILD AND ORDER</div>
+
+            <div class="builds-car-options">
+                <div class="builds-car">
+                    <div class="builds-car-range-image"></div>
+                    <div class="builds-car-name">RANGE ROVER</div>
+                </div>
+                <div class="builds-car">
+                    <div class="builds-car-sport-image"></div>
+                    <div class="builds-car-name">RANGE ROVER SPORT</div>
+                </div>
+                <div class="builds-car">
+                    <div class="builds-car-velar-image"></div>
+                    <div class="builds-car-name">RANGE ROVER VELAR</div>
+                </div>
+                <div class="builds-car">
+                    <div class="builds-car-evoque-image"></div>
+                    <div class="builds-car-name">RANGE ROVER EVOQUE</div>
+                </div>
+            </div>
+
+            <div id="builds-car-button"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/saved-builds/index.html'">GO TO SAVED
+                BUILDS</div>
+
+        </div>
+
+
+        <input type="checkbox" id="support-checkbox">
+        <div class="support-slidebar">
+            <label for="support-checkbox">
+                <div id="cross-support">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+            </label>
+
+            <br />
+
+            <p id="support-slidebar-heading">Need help?</p>
+
+            <p>GET IN TOUCH</p>
+
+            <a href="#">LIVE CHAT</a>
+            <a href="#" id="a-whatsapp">WHATSAPP</a>
+
+            <p>ROADSIDE ASSISTANCE</p>
+
+            <span>Available 24/7</span>
+
+            <a href="#">PHONE 1800 103 8545</a>
+
+            <p>FURTHER SUPPORT</p>
+
+            <a href="#">CONTACT US</a>
+            <a href="#">FIND A RETAILER</a>
+            <a href="#">FAQS</a>
+        </div>
+
+    </header>
+
+    <div class="frame">
+        <div class="front-slides">
+            <p id="front-slide-heading">BESPOKE DUO-TONE FADE FINISH</p>
+            <p id="front-slide-sub-heading">FOR THE FIRST TIME ON RANGE ROVER</p>
+            <div class="front-slide-buttons">
+                <div id="front-slide-first-button"
+                    onclick="window.location.href = 'https://www.rangerover.com/en-in/bespoke/index.html'">COMMISSION
+                    YOURS</div>
+                <div id="front-slide-second-button"
+                    onclick="window.location.href = 'https://www.rangerover.com/en-in/bespoke/index.html'">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> FIND OUT MORE</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-first-video">
+        RANGE ROVER SPORT
+    </div>
+
+    <video autoplay muted loop class="first-video">
+        <source src="first_add.mp4" type="video/mp4">
+    </video>
+
+    <div class="after-first-video">
+        <div class="built-own-section">
+            <div id="built-own-first">
+                The original luxury SUV. All Range Rover. All Electric.
+            </div>
+            <div id="built-own-second"
+                onclick="window.location.href= 'https://www.rangerover.com/lr/en_in/l460_k27/4d2iq/a-ev-550_a-fe_a-swb_e/ipr/personalise/model/'">
+                <i class="fa-solid fa-car"></i>
+                <pre> BUILT YOUR OWN</pre>
+            </div>
+            <div id="built-own-third">
+                <pre> > <a href = "https://www.rangerover.com/en-in/range-rover/electric.html">Explore Electric</a></pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="car-options">
+
+        <div class="car-option">
+            <div id="norm-range-rover-image"></div>
+            <div class="car-option-name">RANGE ROVER</div>
+            <div class="car-option-price">Price from: ₹ 24 000 000*</div>
+            <div class="car-options-slogan">Go anywhere, composed everywhere.</div>
+            <div class="car-option-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover/index.html'"><i
+                    class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <div class="car-option-built-own"><i class="fa-solid fa-angle-right"></i>
+                <pre> BUILT YOUR OWN</pre>
+            </div>
+        </div>
+
+        <div class="car-option">
+            <div id="range-rover-sport-image"></div>
+            <div class="car-option-name">RANGE ROVER SPORT</div>
+            <div class="car-option-price">Price from: ₹ 14 300 000* </div>
+            <div class="car-options-slogan">The most dynamic Range Rover Sport ever.</div>
+            <div class="car-option-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-sport/index.html'"><i
+                    class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <div class="car-option-built-own"><i class="fa-solid fa-angle-right"></i>
+                <pre> BUILT YOUR OWN</pre>
+            </div>
+        </div>
+
+        <div class="car-option">
+            <div id="range-rover-velar-image"></div>
+            <div class="car-option-name">RANGE ROVER VELAR</div>
+            <div class="car-option-price">Price from: ₹ 8 100 000* </div>
+            <div class="car-options-slogan">Desirable by design.</div>
+            <div class="car-option-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-velar/index.html'"><i
+                    class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <div class="car-option-built-own"><i class="fa-solid fa-angle-right"></i>
+                <pre> BUILT YOUR OWN</pre>
+            </div>
+        </div>
+
+        <div class="car-option">
+            <div id="range-rover-evoque-image"></div>
+            <div class="car-option-name">RANGE ROVER EVOQUE</div>
+            <div class="car-option-price">Price from: ₹ 6 486 000* </div>
+            <div class="car-options-slogan">Captivating, sophisticated and charismatic.</div>
+            <div class="car-option-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-evoque/index.html'"><i
+                    class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <div class="car-option-built-own"><i class="fa-solid fa-angle-right"></i>
+                <pre> BUILT YOUR OWN</pre>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="second-slideshow">
+
+        <input type="radio" name="slider" id="slide1-radio" checked>
+        <input type="radio" name="slider" id="slide2-radio">
+        <input type="radio" name="slider" id="slide3-radio">
+        <input type="radio" name="slider" id="slide4-radio">
+        <input type="radio" name="slider" id="slide5-radio">
+
+        <div class="slide1">
+            <div id="gt-image-section"></div>
+            <div class="information-section">
+
+                <div class="slide-car-name">RANGE ROVER GT</div>
+
+                <div class="slide-car-slogan">
+                    A new visison of sophistication
+                </div>
+
+                <div class="slide-explore">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> EXPLORE RANGE ROVER GT</pre>
+                </div>
+
+                <a class="car-calling" href="#">KEEP ME INFORMED</a>
+
+                <div class="first-counter">
+                    <label for="slide5-radio">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+
+                    <span>1 / 5</span>
+
+                    <label for="slide2-radio">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slide2">
+            <div id="sv-ultra-image-section"></div>
+            <div class="information-section">
+
+                <div class="slide-car-name">RANGE ROVER SV ULTRA</div>
+
+                <div class="slide-car-slogan">
+                    The pinnacle of Range Rover luxury and distinction
+                </div>
+
+                <div class="slide-explore">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> EXPLORE RANGE ROVER SV</pre>
+                </div>
+
+                <a class="car-calling" href="#">EXPLORE ELECTROSTATIC SOUND</a>
+
+                <div class="second-counter">
+                    <label for="slide1-radio">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+
+                    <span>2 / 5</span>
+
+                    <label for="slide3-radio">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slide3">
+            <div id="sv-masara-image-section"></div>
+            <div class="information-section">
+
+                <div class="slide-car-name">RANGE ROVER SV MASARA EDITION</div>
+
+                <div class="slide-explore">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> EXPLORE SV MASARA</pre>
+                </div>
+
+                <a class="car-calling" href="#">VIEW GALLERY</a>
+
+                <div class="third-counter">
+                    <label for="slide2-radio">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+
+                    <span>3 / 5</span>
+
+                    <label for="slide4-radio">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slide4">
+            <div id="sport-image-section"></div>
+            <div class="information-section">
+
+                <div class="slide-car-name">RANGE ROVER SPORT</div>
+
+                <div class="slide-car-slogan">
+                    Dynnamic by design. Designed and built in the UK.
+                </div>
+
+                <div class="slide-explore">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> FIND OUT MORE </pre>
+                </div>
+
+                <div class="fourth-counter">
+                    <label for="slide3-radio">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+
+                    <span>4 / 5</span>
+
+                    <label for="slide5-radio">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slide5">
+            <div id="sv-carbon-image-section"></div>
+            <div class="information-section">
+
+                <div class="slide-car-name">RANGE ROVER SPORT SV CARBON</div>
+
+                <div class="slide-car-slogan">
+                    Ultra lightweight detailing for enhanced performance.
+                </div>
+
+                <div class="slide-explore">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <pre> FIND OUT MORE </pre>
+                </div>
+
+                <div class="fifth-counter">
+                    <label for="slide4-radio">
+                        <i class="fa-solid fa-circle-chevron-left"></i>
+                    </label>
+
+                    <span>5 / 5</span>
+
+                    <label for="slide1-radio">
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="individual-range-rover">
+        <div class="individual-information-range-rover">
+            <div class="individual-car-name">
+                RANGE ROVER
+            </div>
+            <div class="individual-car-slogan">
+                Go anywhere, composed everywhere.
+            </div>
+            <div class="individual-car-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover/index.html'">
+                <i class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <a class="individual-car-calling" href="#">
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+        <div class="range-rover-visual">
+            <div class="range-image-part">
+                <div class="range-image1"></div>
+                <div class="range-image2"></div>
+            </div>
+            <div id="range-video">
+                <video autoplay muted loop>
+                    <source src="indi1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="individual-range-rover-sv-ultra">
+
+        <div class="range-rover-sv-ultra-visual">
+            <div class="range-sv-ultra-image-part">
+                <div class="range-sv-ultra-image1"></div>
+                <div id="range-sv-ultra-image2"></div>
+            </div>
+            <div id="range-sv-ultra-video">
+                <video autoplay muted loop>
+                    <source src="indi2.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="individual-information-range-rover-sv-ultra">
+            <div class="individual-car-name">
+                RANGE ROVER SV ULTRA
+            </div>
+            <div class="individual-car-slogan">
+                Go anywhere, composed everywhere.
+            </div>
+            <div class="individual-car-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover/sv.html'">
+                <i class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <a class="individual-car-calling" href="#">
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+    </div>
+
+    <div class="individual-range-rover-sport">
+        <div class="individual-information-range-rover-sport">
+            <div class="individual-car-name">
+                RANGE ROVER SPORT
+            </div>
+            <div class="individual-car-slogan">
+                The most dynamic Range Rover Sport ever.
+            </div>
+            <div class="individual-car-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-sport/index.html'">
+                <i class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <a class="individual-car-calling" href="#">
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+        <div class="range-rover-sport-visual">
+            <div class="range-sport-image-part">
+                <div class="range-sport-image1"></div>
+                <div id="range-sport-image2"></div>
+            </div>
+            <div id="range-sport-video">
+                <video autoplay muted loop>
+                    <source src="indi3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="individual-range-rover-sv-ultra">
+
+        <div class="range-rover-velar-visual">
+            <div class="range-velar-image-part">
+                <div class="range-velar-image1"></div>
+                <div id="range-velar-image2"></div>
+            </div>
+            <div id="range-velar-video">
+                <video autoplay muted loop>
+                    <source src="indi4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="individual-information-range-rover-velar">
+            <div class="individual-car-name">
+                RANGE ROVER VELAR
+            </div>
+            <div class="individual-car-slogan">
+                Desirable by design.
+            </div>
+            <div class="individual-car-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-velar/index.html'">
+                <i class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <a class="individual-car-calling" href="#">
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+    </div>
+
+    <div class="individual-range-rover-evoque">
+        <div class="individual-information-range-rover-evoque">
+            <div class="individual-car-name">
+                RANGE ROVER EVOQUE
+            </div>
+            <div class="individual-car-slogan">
+                Captivating, sophisticated and charismatic.
+            </div>
+            <div class="individual-car-explore"
+                onclick="window.location.href = 'https://www.rangerover.com/en-in/range-rover-evoque/index.html'">
+                <i class="fa-solid fa-arrow-right"></i>
+                <pre> EXPLORE</pre>
+            </div>
+            <a class="individual-car-calling" href="#">
+                BUILD YOUR OWN
+            </a>
+        </div>
+
+        <div class="range-rover-evoque-visual">
+            <div class="range-evoque-image-part">
+                <div class="range-evoque-image1"></div>
+                <div id="range-evoque-image2"></div>
+            </div>
+            <div id="range-evoque-video">
+                <video autoplay muted loop>
+                    <source src="indi5.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!--Now we will move towards images only-->
+
+    <div class="scroll-image-part">
+        <div class="scroll-image1"></div>
+        <div class="scroll-image2"></div>
+        <div class="scroll-image3"></div>
+        <div class="scroll-image4"></div>
+        <div class="scroll-image5"></div>
+    </div>
+
+    <!--now the wimbolton text-->
+
+    <div class="image-scroll-textarea">
+        <div class="image-scroll-area-first">
+            <p id="image-scroll-heading">THE CHAMPIONSHIPS, WIMBLEDON 2026</p>
+            <p id="image-scroll-p">Range Rover is proud to be oartner with The Championships, Wimbledon 2026</p>
+        </div>
+        <div id="image-scroll-explore"
+            onclick="window.location.href = 'https://www.rangerover.com/en-in/explore/range-rover-chapters/wimbledon/index.html'">
+            <i class="fa-solid fa-arrow-right"></i>
+            <pre> Explore</pre>
+        </div>
+    </div>
+
+    <!--Now the warrent-->
+
+    <div class="royal-warrent">
+        <div class="royal-warrent-textarea">
+            <p id="royal-warrent-heading">ROYAL WARRANT </p>
+            <p id="royal-warrent-p">We are proud to have been included in the initial grant of Royal Warrants by HM King
+                Charles
+                III in May 2024, as well as receiving a Royal Warrant from HM Queen Camilla in May 2025.
+                This continues a proud history that extends to our first Warrant from HM King George VI in 1951.
+            </p>
+        </div>
+        <div class="warrent-image"></div>
+    </div>
+
+    <div class = "always-informed-bg">
+        <div class="always-informed">
+            <div class="always-informed-textarea">
+                <p id="always-informed-heading">ALWAYS INFORMED</p>
+                <p id="always-informed-text">Range Rover updates provided by its creators</p>
+            </div>
+            <div class="email-area">
+                <input type="email" placeholder="Email Address" id="email">
+                <button type="submit" id="email-button">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Now the footer=============================-->
+
+    <div class = "footer">
+        <div class = "first-footer">
+
+            <div class = "footer-first-part">
+                <div class = "footer-first-first">
+                    <div class="footer-one">
+                        <p>VEHICLES</p>
+    
+                        <a href="#">RANGE ROVER</a>
+                        <a href="#">RANGE ROVER SPORT</a>
+                        <a href="#">RANGE ROVER VELAR</a>
+                        <a href="#">RANGE ROVER EVOQUE</a>
+                        <a href="#">BESPOKE</a>
+                        <a href="#">DIPLOMATIC SALES</a>
+                        <a href="#">BOOK A TEST DRIVE</a>
+                    </div>
+    
+                    <div class="footer-two">
+                        <p>OWNERSHIP</p>
+    
+                        <a href="#">OWNERSHIP SERVICES</a>
+                        <a href="#">INCONTROL</a>
+                        <a href="#">SOFTWARE UPDATES</a>
+                        <a href="#">ACCESSORIES</a>
+    
+                        <p>ABOUT US</p>
+    
+                        <a href="#">JLR</a>
+                        <a href="#">SUSTAINABILITY</a>
+                        <a href="#">FAQS</a>
+                    </div>
+    
+                    <div class="footer-three">
+                        <p>OUR BRANDS</p>
+    
+                        <a href="#">RANGE ROVER</a>
+                        <a href="#">DEFENDER</a>
+                        <a href="#">DISCOVERY</a>
+                        <a href="#">JAGUAR</a>
+                    </div>
+                </div>
+                <div class = "foter-first-second">
+                    <input type = "text" placeholder = "EXPLORE OUR SITE" id = "footer-search">
+                </div>
+            </div>
+    
+            <div class = "footer-second-part">
+                <div class = "instagram">
+                    <div id = "insta-logo">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <p>Instagram</p>
+                </div>
+                <div class = "youtube">
+                    <div class = "youtube-logo">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <p>Youtube</p>
+                </div>
+                <div class = "facebook">
+                    <div class= "facebook-logo">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <p>Facebook</p>
+                </div>
+                <div class = "x">
+                    <div class = "x-logo">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </div>
+                    <p>X</p>
+                </div>
+                <div class = "linkedin">
+                    <div class = "linkedin-logo">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p>Linked In</p>
+                </div>
+            </div>
+
+        </div>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="second-footer">
+
+            <p>© JAGUAR LAND ROVER LIMITED 2026</p>
+
+            <p>
+                Jaguar Land Rover Limited: Registered office: Abbey Road, Whitley, Coventry CV3 4LF.
+                Registered in England No: 1672070
+            </p>
+
+            <p>
+                Smart Settings is intended to be released as part of a future wireless software update.
+                Software development and releases are subject to movements in planning and programming,
+                and dates may be subject to change.
+            </p>
+
+            <p>
+                There is currently a global shortage of semi-conductor components.
+                Jaguar Land Rover India Limited (JLRIL) is affected by this shortage and as a result,
+                certain Jaguar and Land Rover products may not be available and delivery timelines for
+                some products may be extended by authorised Jaguar Land Rover Retailers.
+                Please contact your authorised Jaguar Land Rover Retailer for further updates.
+            </p>
+
+            <p>
+                Accessories/features shown may not be part of standard equipment. iPod is a registered
+                trademark of Apple Inc., registered in the US and other countries. Meridian is a registered
+                trademark of Meridian Audio Ltd. Please note not all features set out above are available
+                as standard for all Land Rover models. Some features are available as a cost option only.
+                Please refer to the Owners Handbook for Navigation Terms and Conditions. The Information
+                and specification shown are not binding and are subject to change without prior notice.
+                These are indicative specifications for reference only.
+            </p>
+
+            <p>
+                The figures provided are as a result of official manufacturer's tests in accordance with
+                EU legislation. A vehicle's actual fuel consumption may differ from that achieved in such
+                tests and these figures are for comparative purposes only.
+            </p>
+
+            <p>
+                From 30 September 2019 Spotify will no longer be supporting the InControl Apps access.
+                As the dominant preferred access by customers it will be available to customers via
+                Smartphone Pack where installed.
+            </p>
+
+            <p>
+                <strong>Important note on imagery &amp; specification.</strong>
+                The global shortage of semiconductors is currently affecting vehicle build specifications,
+                option availability, and build timings. This is a very dynamic situation, and as a result
+                imagery used within the website at present may not fully reflect current specifications
+                for features, options, trim and colour schemes. Please consult your authorised Retailer
+                who will be able to confirm any current restrictions with you in order to allow an informed choice.
+            </p>
+
+            <p>
+                Jaguar Land Rover Limited is constantly seeking ways to improve the specification, design
+                and production of its vehicles, parts and accessories and alterations take place continually,
+                and we reserve the right to change without notice. Some features may vary between optional
+                and standard for different model years. The information, specification, engines and colours
+                on this website are based on European specification and may vary from market to market and
+                are subject to change without notice. Some vehicles are shown with optional equipment and
+                retailer-fit accessories that may not be available in all markets. Please contact your local
+                retailer for local availability and prices.
+            </p>
+
+            <p>COLOURS</p>
+
+            <p>
+                Image colours reproduced here are provided for illustrative purposes only. Colours are
+                reproduced on-screen and may therefore vary compared to the actual finish. The company
+                reserves the right to alter or withdraw any colour finish without notice. Some of these
+                colours may not be obtainable in your country. Please check availability of colours and
+                current specifications with your Jaguar Retailer. Distributors and Retailers are not agents
+                of Jaguar Land Rover Limited and have absolutely no authority to bind Jaguar Land Rover
+                Limited to any express or implied undertaking or representation.
+            </p>
+
+            <p>
+                The mapping on this website is provided by external mapping providers and is for general
+                information purposes only.
+            </p>
+
+            <p>
+                *The prices mentioned are ex-showroom and are subject to change without notice. The
+                ex-showroom price does not include any optional items (such as accessories and other
+                specialised items), which are at your discretion. The ex-showroom price is inclusive of
+                GST (including compensation cess) and road service assistance (for breakdowns only) but
+                excludes Vehicle Registration Tax, Tax Collected at Source (TCS) and Insurance Premium.
+                For your information, the sale transaction will be directly between yourself and an
+                independent Jaguar Land Rover India Limited (“JLRIL”) authorised retailer.
+                Accessories/features/colours and other equipment shown may not be available on vehicles
+                sold in India. Please contact your local Authorised Retailer for any information including
+                the availability of vehicles, features, options, pricing etc. Jaguar Land Rover India
+                Limited (“JLRIL”) is not involved in the sale transaction or the Assured Buy Back offer /
+                campaign. The Assured Buy Back offer / campaign is at the sole discretion of a JLRIL
+                authorised retailer. Please contact your nearest JLRIL authorised retailer for any information.
+            </p>
+
+        </div>
+
+        <div class="third-footer">
+            <a href = "https://leetcode.com/u/itzs_shishya/">copyright-@Shishya</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
